@@ -38,9 +38,22 @@ justify-content: stretch;
 const StyledContainer = sc.article`
 margin-top: 2.8rem !important;
 padding-left: 26rem !important;
+padding-right: 2rem;
 padding-top: 2rem;
 max-width: 1200px;
-flex-grow: 1;`;
+flex-grow: 1;
+  @media only screen and (max-width: 800px) {
+      padding-left: 1rem!important;
+    }
+  }
+`;
+
+const HideMobile = sc.span`
+  @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+`
 
 export default () => (
 
@@ -50,7 +63,7 @@ export default () => (
         <Container>
           <Menu.Item as='a' header>
             <Image size='mini' src={LOGO} style={{marginRight: '1.5em'}}/>
-            Looking Glass Image
+            Looking Glass Engine
           </Menu.Item>
           <Menu.Item><a href="/">Home</a></Menu.Item>
 
@@ -64,7 +77,7 @@ export default () => (
           </Dropdown>
         </Container>
       </Menu>
-      <Image src={MIRROR_GIRL} style={fixedImage}/>
+      <HideMobile><Image src={MIRROR_GIRL} style={fixedImage}/></HideMobile>
       <StyledContainer>
         <Headline as="h1">Looking Glass Engine</Headline>
         <Switch>

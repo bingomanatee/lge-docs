@@ -93988,8 +93988,18 @@ var _jsxFileName = "/Users/davidedelhart/Documents/repos/lge/src/components/App/
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2.default)(["\n  @media only screen and (max-width: 800px) {\n      display: none;\n    }\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2.default)(["\nmargin-top: 2.8rem !important;\npadding-left: 26rem !important;\npadding-top: 2rem;\nmax-width: 1200px;\nflex-grow: 1;"]);
+  var data = (0, _taggedTemplateLiteral2.default)(["\nmargin-top: 2.8rem !important;\npadding-left: 26rem !important;\npadding-right: 2rem;\npadding-top: 2rem;\nmax-width: 1200px;\nflex-grow: 1;\n  @media only screen and (max-width: 800px) {\n      padding-left: 1rem!important;\n    }\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -94022,34 +94032,36 @@ var MainSection = _styledComponents.default.section(_templateObject());
 
 var StyledContainer = _styledComponents.default.article(_templateObject2());
 
+var HideMobile = _styledComponents.default.span(_templateObject3());
+
 var _default = function _default() {
   return _react.default.createElement(_reactRouterDom.BrowserRouter, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 60
     }
   }, _react.default.createElement(MainSection, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 61
     }
   }, _react.default.createElement(_semanticUiReact.Menu, {
     fixed: "top",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 62
     }
   }, _react.default.createElement(_semanticUiReact.Container, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 63
     }
   }, _react.default.createElement(_semanticUiReact.Menu.Item, {
     as: "a",
     header: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 64
     }
   }, _react.default.createElement(_semanticUiReact.Image, {
     size: "mini",
@@ -94059,18 +94071,18 @@ var _default = function _default() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 65
     }
-  }), "Looking Glass Image"), _react.default.createElement(_semanticUiReact.Menu.Item, {
+  }), "Looking Glass Engine"), _react.default.createElement(_semanticUiReact.Menu.Item, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 68
     }
   }, _react.default.createElement("a", {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 68
     }
   }, "Home")), _react.default.createElement(_semanticUiReact.Dropdown, {
     item: true,
@@ -94078,79 +94090,84 @@ var _default = function _default() {
     text: "Guide",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 70
     }
   }, _react.default.createElement(_semanticUiReact.Dropdown.Menu, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 71
     }
   }, _react.default.createElement(_semanticUiReact.Dropdown.Item, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 72
     }
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/start",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 72
     }
   }, "Quick Start")), _react.default.createElement(_semanticUiReact.Dropdown.Item, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 73
     }
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/guide",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 73
     }
   }, "Usage Guide")), _react.default.createElement(_semanticUiReact.Dropdown.Item, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 74
     }
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/status",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 74
     }
   }, "Status and Initialization")), _react.default.createElement(_semanticUiReact.Dropdown.Item, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 75
     }
   }, _react.default.createElement(_reactRouterDom.Link, {
     to: "/api",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 75
     }
-  }, "API Documentation")))))), _react.default.createElement(_semanticUiReact.Image, {
+  }, "API Documentation")))))), _react.default.createElement(HideMobile, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80
+    }
+  }, _react.default.createElement(_semanticUiReact.Image, {
     src: MIRROR_GIRL,
     style: fixedImage,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 80
     }
-  }), _react.default.createElement(StyledContainer, {
+  })), _react.default.createElement(StyledContainer, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 81
     }
   }, _react.default.createElement(_Headline.default, {
     as: "h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 82
     }
   }, "Looking Glass Engine"), _react.default.createElement(_reactRouterDom.Switch, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 83
     }
   }, _react.default.createElement(_reactRouterDom.Route, {
     path: "/",
@@ -94158,35 +94175,35 @@ var _default = function _default() {
     component: _Intro.default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 84
     }
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/start",
     component: _Start.default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 85
     }
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/guide",
     component: _Guide.default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 86
     }
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/status",
     component: _Status.default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 87
     }
   }), _react.default.createElement(_reactRouterDom.Route, {
     path: "/api",
     component: _Api.default,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 88
     }
   }))), _react.default.createElement(_semanticUiReact.Segment, {
     inverted: true,
@@ -94197,13 +94214,13 @@ var _default = function _default() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 92
     }
   }, _react.default.createElement(_semanticUiReact.Container, {
     textAlign: "center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 93
     }
   }, _react.default.createElement(_semanticUiReact.Grid, {
     divided: true,
@@ -94211,13 +94228,13 @@ var _default = function _default() {
     stackable: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 94
     }
   }, _react.default.createElement(_semanticUiReact.Grid.Column, {
     width: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 95
     }
   }, _react.default.createElement(_semanticUiReact.Header, {
     inverted: true,
@@ -94225,44 +94242,44 @@ var _default = function _default() {
     content: "Group 1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 96
     }
   }), _react.default.createElement(_semanticUiReact.List, {
     link: true,
     inverted: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 97
     }
   }, _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 98
     }
   }, "Link One"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 99
     }
   }, "Link Two"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 100
     }
   }, "Link Three"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 101
     }
   }, "Link Four"))), _react.default.createElement(_semanticUiReact.Grid.Column, {
     width: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 104
     }
   }, _react.default.createElement(_semanticUiReact.Header, {
     inverted: true,
@@ -94270,44 +94287,44 @@ var _default = function _default() {
     content: "Group 2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 105
     }
   }), _react.default.createElement(_semanticUiReact.List, {
     link: true,
     inverted: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 106
     }
   }, _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 107
     }
   }, "Link One"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 108
     }
   }, "Link Two"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 109
     }
   }, "Link Three"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 110
     }
   }, "Link Four"))), _react.default.createElement(_semanticUiReact.Grid.Column, {
     width: 3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 113
     }
   }, _react.default.createElement(_semanticUiReact.Header, {
     inverted: true,
@@ -94315,44 +94332,44 @@ var _default = function _default() {
     content: "Group 3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 114
     }
   }), _react.default.createElement(_semanticUiReact.List, {
     link: true,
     inverted: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 115
     }
   }, _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 116
     }
   }, "Link One"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 117
     }
   }, "Link Two"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 118
     }
   }, "Link Three"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 119
     }
   }, "Link Four"))), _react.default.createElement(_semanticUiReact.Grid.Column, {
     width: 7,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 122
     }
   }, _react.default.createElement(_semanticUiReact.Header, {
     inverted: true,
@@ -94360,19 +94377,19 @@ var _default = function _default() {
     content: "Footer Header",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 123
     }
   }), _react.default.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 124
     }
   }, "Extra space for a call to action inside the footer that could help re-engage users."))), _react.default.createElement(_semanticUiReact.Divider, {
     inverted: true,
     section: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 130
     }
   }), _react.default.createElement(_semanticUiReact.Image, {
     centered: true,
@@ -94380,7 +94397,7 @@ var _default = function _default() {
     src: "/logo.png",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 131
     }
   }), _react.default.createElement(_semanticUiReact.List, {
     horizontal: true,
@@ -94390,35 +94407,35 @@ var _default = function _default() {
     size: "small",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 132
     }
   }, _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 133
     }
   }, "Site Map"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 136
     }
   }, "Contact Us"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 139
     }
   }, "Terms and Conditions"), _react.default.createElement(_semanticUiReact.List.Item, {
     as: "a",
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 142
     }
   }, "Privacy Policy"))))));
 };
@@ -94470,7 +94487,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53719" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62526" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

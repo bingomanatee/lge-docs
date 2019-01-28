@@ -54,7 +54,7 @@ This property reflects an augmented set of actions based on the actions value of
 
 ### Store.status property: Symbol
 
-This is a read-only value that is advanced as the store is initialized. see [/status] for details. 
+This is a read-only value that is advanced as the store is initialized. see [Status and Initialization](/status) for details. 
 
 ### Store.stream property: BehaviorSubject (RxJS)
 
