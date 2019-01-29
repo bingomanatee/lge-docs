@@ -35,7 +35,7 @@ export default cart;
 ```
 
 note - unlike a component.setState, the result of addProduct _completely replaces_ 
-the value of `cart.state` and triggers an event out of cart.stream.
+the value of `cart.state` and triggers an event out of store.stream.
 
 Lastly, add the store to a product page.
 
